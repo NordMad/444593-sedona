@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Паньков](https://up.htmlacademy.ru/htmlcss/18/user/444593).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
