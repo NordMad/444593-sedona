@@ -25,65 +25,70 @@
         <div class="intro-image">
           <img class="background-img" src="http://placekitten.com/1200/508" alt="" width="1200" height="508">
         </div>
-        <p class="text-caption"><b>Седона — небольшой городок в Аризоне,  зaслуживающий большего!</b></p>
+        <h3 class="text-caption">Седона — небольшой городок в Аризоне,  зaслуживающий большего!</h3>
         <p class="text-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
       </section>
-      <section>
+      <section class="attractions-row">
         <h2 class="visually-hidden">Достопримечательности Седоны</h2>
         <div class="attraction-item">
-          <h3>Настоящий городок</h3>
+          <h2>Настоящий городок</h2>
           <span>- №1 -</span>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <div class="attraction-photo">
+        <div class="attraction-photo town-photo">
           <img src="http://placekitten.com/800/256" alt="" width="800" height="256">
         </div>
-        <div>
-          <ul class="services-list">
-            <li class="services-item">
-              <h3>Жилье</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
-            <li class="services-item">
-              <h3>Еда</h3>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="services-item">
-              <h3>Сувениры</h3>
-              <p>Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
+      </section>
+      <section class="attractions-row">
+        <div class="services-item">
+          <h2>Жилье</h2>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="attraction-photo">
+        <div class="services-item">
+          <h2>Еда</h2>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="services-item">
+          <h2>Сувениры</h2>
+          <p>Не только китайского, но и местного производства!</p>
+        </div>
+      </section>
+      <section class="attractions-row">
+        <div class="attraction-photo bridge-photo">
           <img src="http://placekitten.com/800/256" alt="" width="800" height="256">
         </div>
         <div class="attraction-item">
-          <h3>Там есть Мост дьявола</h3>
+          <h2>Там есть Мост дьявола</h2>
           <span>- №2 -</span>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
+      </section>
+      <section class="attractions-row">
         <div class="attraction-item">
-          <h3>Небольшая площадь</h3>
+          <h2>Небольшая площадь</h2>
           <span>- №3 -</span>
           <p>Все достопримечательности находятся очень близко</p>
         </div>
         <div class="attraction-item">
-          <h3>Красивая дорога</h3>
+          <h2>Красивая дорога</h2>
           <span>- №4 -</span>
           <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
         </div>
         <div class="attraction-item">
-          <h3>Мало туристов</h3>
+          <h2>Мало туристов</h2>
           <span>- №5 -</span>
           <p>Большинство едет в гранд каньон и толпится там</p>
         </div>
       </section>
       <section class="hotel-search">
         <h2 class="visually-hidden">Гостиницы в Седоне</h2>
-        <span><b>Заинтересовались?</b></span>
+        <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button>Поиск гостиницы в Седоне</button>
-        <form class="modal" action="https://echo.htmlacademy.ru" method="post">
+        <a class="button" href="#">Поиск гостиницы в Седоне</a>
+      </section>
+      <section class="modal-hotel-search">
+        <h2 class="visually-hidden">Гостиницы в Седоне</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
           <p>
             Дата заезда: <input type="text" value="24 апреля 2017">
           </p>
@@ -96,11 +101,15 @@
           </p>
           <input type="button" value="Найти">
         </form>
-        <img src="http://placekitten.com/1200/473" alt="">
       </section>
+      <div class="hotels-map">
+        <img src="http://placekitten.com/1200/473" alt="">
+      </div>
     </main>
     <footer class="page-footer">
-      <p>#visitsedona</p>
+      <div class="footer-sedona-link">
+        <a href="#">#visitsedona</a>
+      </div>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">twitter</a></li>
@@ -108,7 +117,9 @@
           <li><a class="social-button" href="#">youtube</a></li>
         </ul>
       </div>
-      <p class="footer-copyright">website by</p>
+      <div class="footer-copyright">
+        <p>website by</p>
+      </div>
     </footer>
   </body>
 </html>
