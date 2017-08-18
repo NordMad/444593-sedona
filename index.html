@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -91,20 +92,24 @@
         <h2 class="visually-hidden">Гостиницы в Седоне</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
-            Дата заезда: <input type="text" value="24 апреля 2017">
+            <label for="arrival-date-field">Дата заезда:</label>
+            <input id="arrival-date-field" type="text" name="departure-date" value="24 апреля 2017">
           </p>
           <p>
-            Дата выезда: <input type="text" value="4 июля 2017">
+            <label for="departure-date-field">Дата выезда:</label>
+            <input id="departure-date-field" type="text" name="departure-date" value="4 июля 2017">
           </p>
           <p>
-            Взрослые: <input type="text" value="2"> 
-            Дети: <input type="text" value="0">
+            <label for="adults-amount-field">Взрослые:</label>
+            <input id="adults-amount-field" type="text" name="adults-amount" value="2"> 
+            <label for="children-amount-field">Дети:</label>
+            <input id="children-amount-field" type="text" name="children-amount" value="0">
           </p>
-          <input type="button" value="Найти">
+          <button type="submit">Найти</button>
         </form>
       </section>
       <div class="hotels-map">
-        <img src="img/map.jpg" alt="" width="1200" height="593">
+        <img src="img/map.jpg" alt="Поиск отелей на карте" width="1200" height="593">
       </div>
     </main>
     <footer class="page-footer">
@@ -119,7 +124,7 @@
         </ul>
       </div>
       <div class="footer-copyright">
-        <p>website by</p>
+        <p>website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
       </div>
     </footer>
   </body>

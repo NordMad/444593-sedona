@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -28,16 +29,16 @@
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
-                <input type="checkbox" name="pool" checked>
-                Бассейн
+                <input id="filter-pool" type="checkbox" name="pool" checked>
+                <label for="filter-pool">Бассейн</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" name="parking">
-                Парковка
+                <input id="filter-parking" type="checkbox" name="parking">
+                <label for="filter-parking">Парковка</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" name="Wi-Fi">
-                Wi-Fi
+                <input id="filter-wi-fi" type="checkbox" name="wi-fi">
+                <label for="filter-wi-fi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -45,16 +46,16 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
-                <input type="checkbox" name="hotel" checked>
-                Гостиница
+                <input id="filter-hotel" type="checkbox" name="hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" name="motel" checked>
-                Мотель
+                <input id="filter-motel" type="checkbox" name="motel" checked>
+                <label for="filter-motel">Мотель</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" name="apartments" checked>
-                Апартаменты
+                <input id="filter-apartments" type="checkbox" name="apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -83,8 +84,8 @@
         </div>
         <div class="sorting-section">
           <ul class="scrolling">
-            <li><a href="#">▲</a></li>
-            <li><a href="#">▼</a></li>
+            <li><a href="#">вверх</a></li>
+            <li><a href="#">вниз</a></li>
           </ul>
         </div>
       </section>
@@ -161,7 +162,7 @@
         </ul>
       </div>
       <div class="footer-copyright">
-        <p>website by</p>
+        <p>website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
       </div>
     </footer>
   </body>
