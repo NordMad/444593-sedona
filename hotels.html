@@ -9,24 +9,28 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header wrapper">
         <nav class="main-nav">
-          <ul class="site-nav text-nav">
+          <ul class="nav-left">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
+          </ul>
+          <ul class="nav-right">
             <li><a href="#">Карта Штата</a></li>
-            <li><a class="site-nav-current">Гостиницы</a></li>
+            <li><a class="main-nav-current">Гостиницы</a></li>
           </ul>
         </nav>
-        <a class="sedona-logo" href="index.html">
-        <img src="img/logo.png" alt="City of Sedona" width="138" height="70">
-        </a>
+        <div class="logo">
+          <a class="sedona-logo" href="index.html">
+          <img src="img/logo.png" alt="City of Sedona" width="138" height="70">
+          </a>
+        </div>
       </header>
       <main>
         <h1 class="visually-hidden">Гостиницы в Седоне</h1>
         <section class="filter">
           <h2 class="visually-hidden">Выбор гостиницы</h2>
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form class="filter-form wrapper" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
               <legend>Инфраструктура:</legend>
               <ul>
@@ -69,85 +73,93 @@
             </fieldset>
           </form>
         </section>
-        <section class="sorting-bar">
-          <h2 class="visually-hidden">Подбор подходящей гостиницы</h2>
-          <div class="sorting-section">
-            <p>Найдено: 3</p>
-          </div>
-          <div class="sorting-section">
-            <span>Сортировка:</span>
-          </div>
-          <div class="sorting-section">
-            <ul>
-              <li><a class="sort-active" href="#">по цене</a></li>
-              <li><a href="#">по типу</a></li>
-              <li><a href="#">по рейтингу</a></li>
-            </ul>
-          </div>
-          <div class="sorting-section">
-            <ul class="scrolling">
-              <li><a href="#">вверх</a></li>
-              <li><a class="scroll-active" href="#">вниз</a></li>
-            </ul>
+        <section class="sorting">
+          <div class="sorting-bar wrapper">
+            <h2 class="visually-hidden">Подбор подходящей гостиницы</h2>
+            <div class="sorting-section">
+              <p>Найдено: 3</p>
+            </div>
+            <div class="sorting-section">
+              <span>Сортировка:</span>
+            </div>
+            <div class="sorting-section">
+              <ul class="sorting-type">
+                <li><a class="sort-active" href="#">по цене</a></li>
+                <li><a href="#">по типу</a></li>
+                <li><a href="#">по рейтингу</a></li>
+              </ul>
+            </div>
+            <div class="sorting-section">
+              <ul class="scrolling">
+                <li><a href="#">вверх</a></li>
+                <li><a class="scroll-active" href="#">вниз</a></li>
+              </ul>
+            </div>
           </div>
         </section>
         <section class="sorting-results">
           <h2 class="visually-hidden">Варианты размещения</h2>
-          <article class="result-item">
-            <div class="result-img">
-              <img src="img/amara.jpg" alt="Amara Resort and Spa" width="135" height="90">
-            </div>
-            <div class="result-hotel">
-              <h1><a class="hotel" href="#">Amara Resort &amp; Spa</a></h1>
-              <div class="hotel-type">
-                <span>Гостиница</span>
-                <a href="#" class="button">Подробнее</a>
+          <article class="result">
+            <div class="result-item wrapper">
+              <div class="result-img">
+                <img src="img/amara.jpg" alt="Amara Resort and Spa" width="135" height="90">
               </div>
-              <div class="hotel-price">
-                <span>от 4000 р.</span>
-                <a href="#" class="button">Забронировать</a>
+              <div class="result-hotel">
+                <h1><a class="hotel" href="#">Amara Resort &amp; Spa</a></h1>
+                <div class="hotel-type">
+                  <span>Гостиница</span>
+                  <span>от 4000 р.</span>
+                </div>
+                <div class="hotel-price">
+                  <a href="#" class="button info-btn">Подробнее</a>
+                  <a href="#" class="button bookit-btn">Забронировать</a>
+                </div>
               </div>
-            </div>
-            <div class="result-rating">
-              <span>Рейтинг: 8,5</span>
+              <div class="result-rating">
+                <span>Рейтинг: 8,5</span>
+              </div>
             </div>
           </article>
-          <article class="result-item">
-            <div class="result-img">
-              <img src="img/desert.jpg" alt="Desert Quail Inn" width="135" height="90">
-            </div>
-            <div class="result-hotel">
-              <h1><a class="hotel" href="#">Desert Quail Inn</a></h1>
-              <div class="hotel-type">
-                <span>Мотель</span>
-                <a href="#" class="button">Подробнее</a>
+          <article class="result">
+            <div class="result-item wrapper">
+              <div class="result-img">
+                <img src="img/desert.jpg" alt="Desert Quail Inn" width="135" height="90">
               </div>
-              <div class="hotel-price">
-                <span>от 3000 р.</span>
-                <a href="#" class="button">Забронировать</a>
+              <div class="result-hotel">
+                <h1><a class="hotel" href="#">Desert Quail Inn</a></h1>
+                <div class="hotel-type">
+                  <span>Мотель</span>
+                  <span>от 3000 р.</span>
+                </div>
+                <div class="hotel-price">
+                  <a href="#" class="button info-btn">Подробнее</a>
+                  <a href="#" class="button bookit-btn">Забронировать</a>
+                </div>
               </div>
-            </div>
-            <div class="result-rating">
-              <span>Рейтинг: 8,9</span>
+              <div class="result-rating">
+                <span>Рейтинг: 8,9</span>
+              </div>
             </div>
           </article>
-          <article class="result-item">
-            <div class="result-img">
-              <img src="img/villas.jpg" alt="Villas at Poco Diablo" width="135" height="90">
-            </div>
-            <div class="result-hotel">
-              <h1><a class="hotel" href="#">Villas at Poco Diablo</a></h1>
-              <div class="hotel-type">
-                <span>Апартаменты</span>
-                <a href="#" class="button">Подробнее</a>
+          <article class="result">
+            <div class="result-item wrapper">
+              <div class="result-img">
+                <img src="img/villas.jpg" alt="Villas at Poco Diablo" width="135" height="90">
               </div>
-              <div class="hotel-price">
-                <span>от 2000 р.</span>
-                <a href="#" class="button">Забронировать</a>
+              <div class="result-hotel">
+                <h1><a class="hotel" href="#">Villas at Poco Diablo</a></h1>
+                <div class="hotel-type">
+                  <span>Апартаменты</span>
+                  <span>от 2000 р.</span>
+                </div>
+                <div class="hotel-btn">
+                  <a href="#" class="button info-btn">Подробнее</a>
+                  <a href="#" class="button bookit-btn">Забронировать</a>
+                </div>
               </div>
-            </div>
-            <div class="result-rating">
-              <span>Рейтинг: 9,2</span>
+              <div class="result-rating">
+                <span>Рейтинг: 9,2</span>
+              </div>
             </div>
           </article>
         </section>

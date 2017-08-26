@@ -9,77 +9,75 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header wrapper">
         <nav class="main-nav">
-          <ul class="site-nav">
+          <ul class="nav-left">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
+          </ul>
+          <ul class="nav-right">
             <li><a href="#">Карта Штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
-        <a class="sedona-logo">
-        <img src="img/logo.png" alt="City of Sedona" width="138" height="70">
-        </a>
+        <div class="logo">
+          <a class="sedona-logo" href="index.html">
+          <img src="img/logo.png" alt="City of Sedona" width="138" height="70">
+          </a>
+        </div>
       </header>
       <main>
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <section class="site-intro">
           <h2 class="visually-hidden">Город Седона</h2>
-          <div class="intro-image">
-            <img class="background-img" src="img/intro.jpg" alt="" width="1200" height="508">
-          </div>
-          <h3 class="text-caption">Седона — небольшой городок в Аризоне, зaслуживающий большего!</h3>
-          <p class="text-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+          <div class="intro-image"></div>
+          <h3>Седона — небольшой городок в Аризоне,<br> зaслуживающий большего!</h3>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
         </section>
         <section class="services">
           <h2 class="visually-hidden">Достопримечательности Седоны</h2>
           <div class="services-item">
-            <h2>Настоящий городок</h2>
+            <h2>Настоящий<br> городок</h2>
             <span>- №1 -</span>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <div class="services-photo town-photo">
-            <img src="img/town.jpg" alt="" width="800" height="256">
-          </div>
+          <div class="town-photo"></div>
         </section>
-        <section class="services">
-          <div class="services-goods">
+        <section class="services-goods">
+          <div class="goods">
             <h2>Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="services-goods">
+          <div class="goods">
             <h2>Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
-          <div class="services-goods">
+          <div class="goods">
             <h2>Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </section>
         <section class="services">
-          <div class="services-photo bridge-photo">
-            <img src="img/bridge.jpg" alt="" width="800" height="256">
-          </div>
+          <div class="bridge-photo"></div>
           <div class="services-item">
-            <h2>Там есть Мост дьявола</h2>
+            <h2>Там есть<br> Мост дьявола</h2>
             <span>- №2 -</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </section>
         <section class="services">
           <div class="services-item">
-            <h2>Небольшая площадь</h2>
+            <h2>Небольшая<br> площадь</h2>
             <span>- №3 -</span>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="services-item">
-            <h2>Красивая дорога</h2>
+            <h2>Красивая<br>дорога</h2>
             <span>- №4 -</span>
             <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
           </div>
           <div class="services-item">
-            <h2>Мало туристов</h2>
+            <h2>Мало<br>туристов</h2>
             <span>- №5 -</span>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </div>
@@ -87,12 +85,12 @@
         <section class="hotel-search">
           <h2 class="visually-hidden">Гостиницы в Седоне</h2>
           <h3>Заинтересовались?</h3>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="button" href="#">Поиск гостиницы в Седоне</a>
         </section>
         <section class="modal-search">
           <h2 class="visually-hidden">Гостиницы в Седоне</h2>
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label for="arrival-date-field">Дата заезда:</label>
               <input id="arrival-date-field" type="text" name="arrival-date" value="24 апреля 2017">
@@ -110,9 +108,7 @@
             <button class="button" type="submit">Найти</button>
           </form>
         </section>
-        <div class="hotels-map">
-          <img src="img/map.jpg" alt="Поиск отелей на карте" width="1200" height="593">
-        </div>
+        <div class="hotels-map"></div>
       </main>
       <footer class="page-footer">
         <div class="visitsedona-link">
@@ -126,7 +122,9 @@
           </ul>
         </div>
         <div class="footer-copyright">
-          <p>website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
+          <p>website by 
+            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          </p>
         </div>
       </footer>
     </div>
