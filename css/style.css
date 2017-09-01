@@ -338,16 +338,19 @@ a {
 .search-form .date-field {
 	width: 346px;
 	margin-bottom: 30px;
+	padding-right: 40px;
 }
 
 .search-form .date-icon {
-	display: block;
+	display: inline-block;
 	position: absolute;
-	top: 8px;
-	right: 9px;
+	top: 7px;
+	right: 15px;
+	width: 21px;
+	height: 22px;
 }
 
-.date-icon button,
+.date-icon ,
 .amount button {
 	border: none;
 	outline: none;
@@ -356,19 +359,13 @@ a {
 	background-position: center;
 }
 
-.date-icon button {
-	width: 21px;
-	height: 22px;
-	background-image: url("../img/calendar.svg");
+.date-icon:hover path,
+.date-icon:focus path {
+	fill: #000000;
 }
 
-.date-icon button:hover,
-.date-icon button:focus {
-	background-image: url("../img/calendar-hover.svg")
-}
-
-.date-icon button:active {
-	background-image: url("../img/calendar-active.svg")
+.date-icon:active path {
+	fill: #81b3d2;
 }
 
 .search-form .amount {
@@ -379,7 +376,7 @@ a {
 }
 
 .search-form .adults {
-	width: 227px;
+	width: 226px;
 	float: left;
 }
 
@@ -390,7 +387,7 @@ a {
 
 .search-form .amount-field {
 	width: 114px;
-	margin-bottom: 58px;
+	margin-bottom: 55px;
 	text-align: center;
 }
 
@@ -951,15 +948,13 @@ a {
 	width: 115px;
 	height: 41px;
 	vertical-align: middle;
-	background-image: url("../img/logo-htmlacademy.svg");
-	background-repeat: no-repeat;
 }
 
-.footer-copyright a:hover,
-.footer-copyright a:focus {
-	background-image: url("../img/logo-htmlacademy-hover.svg");
+.footer-copyright a:hover path,
+.footer-copyright a:focus path {
+	fill: #81b3d2;
 }
 
-.footer-copyright a:active {
-	background-image: url("../img/logo-htmlacademy-active.svg");
+.footer-copyright a:active path {
+  fill: #bdbbbc;
 }
