@@ -275,7 +275,7 @@ a {
   width: 568px;
   height: 86px;
   margin: 0 auto;
-  padding: 31px 0;
+  padding: 31px 55px;
   font-size: 21px;
   line-height: 26px;
   vertical-align: middle;
@@ -310,18 +310,9 @@ a {
   box-shadow: 0 7px 15px rgba( 0, 1, 1, 0.15);
 }
 
-.search-form p {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: baseline;
-  margin: 0;
-}
-
 .search-form input {
   display: inline-block;
   height: 38px;
-  margin: 0;
   padding: 6px 12px;
   font: inherit;
   font-weight: inherit;
@@ -333,29 +324,44 @@ a {
   outline: none;
 }
 
-.search-form .date-field:hover {
+.search-form label {
+  display: inline-block;
+  height: 26px;
+  vertical-align: middle;
+}
+
+.date {
+  position: relative;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.date label,
+.adults label {
+  width: 95px;
+  margin-right: 13px;
+}
+
+.date .date-field {
+  width: 346px;
+  padding-right: 40px;
+}
+
+.date .date-field:hover {
   background-color: #ebebeb;
 }
 
-.search-form .date-field:focus {
+.date .date-field:focus {
   background-color: #ffffff;
   box-shadow: inset 0 0 0 2px #e5e5e5;
 }
 
-.search-form .date-field {
-  width: 346px;
-  margin-bottom: 30px;
-  padding-right: 40px;
-}
-
-.search-form .date-icon {
-  display: inline-block;
+.date .date-icon {
   position: absolute;
   top: 8px;
   right: 9px;
   width: 21px;
   height: 22px;
-  vertical-align: middle;
 }
 
 .date-icon,
@@ -377,26 +383,31 @@ a {
   fill: #81b3d2;
 }
 
-.search-form .amount {
+.amount {
   display: flex;
   position: relative;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  height: 38px;
+  margin-bottom: 52px;
 }
 
-.search-form .adults {
+.adults {
   width: 226px;
   float: left;
 }
 
-.search-form .children {
+.children {
   width: 180px;
   float: right;
 }
 
-.search-form .amount-field {
+.children label {
+  width: 66px;
+}
+
+.amount-field {
   width: 114px;
-  margin-bottom: 52px;
   text-align: center;
 }
 
@@ -442,13 +453,12 @@ a {
 }
 
 .search-form .button {
-  display: inline-block;
   width: 458px;
-  height: 58px;
+  min-height: 58px;
+  padding: 10px;
   font-size: 21px;
   line-height: inherit;
   text-transform: inherit;
-  vertical-align: middle;
   background-color: #81b3d2;
   border: none;
 }
@@ -474,6 +484,8 @@ a {
 
 .filter {
   color: #ffffff;
+  min-height: 217px;
+  padding: 30px 0;
   background-color: #81b3d2;
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
@@ -482,14 +494,12 @@ a {
 }
 
 .filter-form {
-  height: 217px;
   display: flex;
   align-items: center;
 }
 
 .filter-form fieldset {
   width: 255px;
-  height: 157px;
   border: none;
   margin: 0;
   padding: 0;
@@ -498,7 +508,7 @@ a {
 .filter-form legend {
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 }
 
 .filter-form ul {
@@ -506,9 +516,8 @@ a {
   width: 110px;
   height: 114px;
   margin: 0;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -590,8 +599,9 @@ a {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 95px;
-  padding-left: 60px;
+  width: 35%;
+  padding: 5px 2.5% 5px 12.5%;
+  text-align: center;
 }
 
 .price-controls input {
@@ -674,7 +684,6 @@ a {
   display: flex;
   height: 86px;
   padding: 26px 0;
-  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -775,7 +784,6 @@ a {
 .result-item {
   display: flex;
   height: 150px;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -794,38 +802,38 @@ a {
 }
 
 .result-hotel {
-  display: flex;
   width: 258px;
   height: 90px;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .result-hotel h1 {
   margin: 0;
+  margin-bottom: 5px;
   font-size: 21px;
+  line-height: 26px;
 }
 
-.hotel {
+.result-hotel h1 > a {
   color: #000000;
 }
 
-.hotel:hover,
-.hotel:focus {
+.result-hotel h1 > a:hover,
+.result-hotel h1 > a:focus {
   color: #81b3d2;
 }
 
-.hotel:active {
+.result-hotel h1 > a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel-type span {
   display: inline-block;
+  min-width: 110px;
+  margin-bottom: 11px;
   vertical-align: middle;
 }
 
 .hotel-type span:first-child {
-  width: 110px;
   margin-right: 2px;
 }
 
@@ -957,7 +965,7 @@ a {
 
 .footer-copyright a {
   display: inline-block;
-  width: 115px;
+  width: 120px;
   height: 41px;
   vertical-align: middle;
 }
