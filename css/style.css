@@ -132,15 +132,8 @@ a {
 }
 
 .site-intro {
-  margin-bottom: 50px;
-  text-align: center;
-  background-color: #ffffff;
-}
-
-.intro-image {
   width: 100%;
   height: 508px;
-  margin-bottom: 60px;
   background-color: #81b3d2;
   background-image: 
     url("../img/welcome.png"),
@@ -152,18 +145,22 @@ a {
     contain,
     cover;
   background-position: 
-    50% 49%, 
-    bottom, 
+    50% 76px, 
+    bottom,
     50% 21%;
 }
 
-.site-intro h3 {
-  margin-bottom: 28px;
+.intro-block {
+  min-height: 216px;
+  padding: 60px 100px 20px;
+  text-align: center;
+  line-height: 26px;
+  background-color: #ffffff;
 }
 
-.site-intro h3,
-.site-intro p {
-  line-height: 26px;
+.intro-block h3 {
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 .services {
@@ -189,15 +186,6 @@ a {
   background-color: #eeeeee;
 }
 
-.services:nth-of-type(-n+4) .services-item {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-.services:nth-of-type(-n+4) .services-item p {
-  padding: 0 12.25%;
-}
-
 .services-item h2,
 .goods h2 {
   margin: 0 auto;
@@ -216,6 +204,15 @@ a {
 .services-item p {
   padding: 0 15%;
   margin: 0;
+}
+
+.services-item.special-item {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.special-item p {
+  padding: 0 12.25%;
 }
 
 .services-goods {
